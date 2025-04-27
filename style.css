@@ -1,0 +1,85 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  padding: 30px;
+}
+
+.spectrum-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.spectrum-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.toggle-left, .toggle-right {
+  flex: 1;
+  text-align: center;
+}
+
+.reflection-box, .ai-process-box {
+  background-color: #c2c2c2;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 25px 0;
+  text-align: middle;
+}
+
+.reflection-box h3,
+.ai-process-box h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.reflection-question p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.scenario-output {
+  font-size: 16px;
+  color: #444;
+  background-color: #e8e8e8;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.spectrum-bar {
+  position: relative;
+  height: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: linear-gradient(to right, #4CAF50, #FFC107, #F44336);
+  margin-top: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.spectrum-dot {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: left 0.2s ease, background-color 0.2s ease;
+}
+
+.spectrum-label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
