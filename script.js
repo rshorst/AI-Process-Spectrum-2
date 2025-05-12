@@ -52,7 +52,7 @@ function handleToggles() {
 
   if (fullAiToggle.checked) {
     questionBox.innerHTML = `<p>Why was full automation appropriate in this context?</p><p>How does outsourcing the act of reading change your relationship to the ideas you're being asked to learn?</p>`;
-    output.textContent = "You used AI to create a podcast of the recommended readings on your syllabus, as you didn't have time to read them.";
+    output.textContent = "You used AI to create a podcast of the *recommended* readings on your syllabus as you didn't have time to read them yourself.";
     label.textContent = "Fully AI Generated";
     dot.style.display = "none";
     return;
